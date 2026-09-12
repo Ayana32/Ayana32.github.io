@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Misun Kim, Multilingual NLP, LLM Alignment, Interpretability" />
+  <title>Misun Kim, Multilingual NLP Researcher</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top">MK.</a>
+    <nav>
+      <a href="#research">Research</a>
+      <a href="#journey">Journey</a>
+      <a href="#work">Work</a>
+      <a href="#writing">Writing</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero section">
+      <div class="hero-copy">
+        <p class="eyebrow">MULTILINGUAL NLP · LLM ALIGNMENT · INTERPRETABILITY</p>
+        <h1>Making language-model behaviour more reliable across languages.</h1>
+        <p class="hero-lede">
+          I’m <strong>Misun Kim</strong>, an MSc researcher in Speech &amp; Natural Language Processing
+          at the University of Sheffield. I study when alignment interventions transfer across languages and tasks —
+          and why similar internal representations can still lead to different behavioural effects.
+        </p>
+        <div class="language-context">
+          <span class="language-label">MULTILINGUAL BACKGROUND</span>
+          <p>Korean, English, Spanish, Kazakh and Japanese</p>
+        </div>
+        <div class="hero-actions">
+          <a class="btn primary" href="#research">Explore my research ↘</a>
+          <a class="btn secondary" href="assets/Misun_Kim_CV.pdf" target="_blank" rel="noopener">CV ↗</a>
+        </div>
+        <div class="link-row">
+          <a href="https://github.com/Ayana32" target="_blank" rel="noopener">GitHub ↗</a>
+          <a href="https://www.linkedin.com/in/misun-kim-nlp/" target="_blank" rel="noopener">LinkedIn ↗</a>
+          <a href="mailto:misunkim2732@gmail.com">Email ↗</a>
+        </div>
+      </div>
+      <div class="portrait-wrap">
+        <div class="portrait-panel compact">
+          <img src="assets/ayana-portrait.jpg" alt="Portrait of Misun Kim" />
+        </div>
+      </div>
+    </section>
+    <section class="signal-strip compact-signals">
+      <div><strong>MSc @ Sheffield</strong><span>Distinction-level results</span></div>
+      <div><strong>First Distinction Scholarship</strong><span>HUFS</span></div>
+      <div><strong>First-author research</strong><span>ACK 2023</span></div>
+    </section>
+
+    <section id="research" class="section">
+      <p class="section-no">01 / FEATURED RESEARCH</p>
+      <div class="section-heading">
+        <h2>Research that starts with a behavioural puzzle.</h2>
+        <p>Three connected projects, one research direction.</p>
+        <p class="research-roadmap">From characterising the gap, to explaining it, to making alignment more reliable across languages.</p>
+      </div>
+
+      <div class="research-grid">
+        <article class="project-card featured">
+          <span class="tag">MSc Dissertation · 2026</span>
+          <h3>Cross-Lingual Activation Steering in LLMs</h3>
+          <p class="project-meta-line"><strong>Evaluation languages:</strong> English, Italian, Chinese, Korean and Kazakh</p>
+          <p>
+            Testing whether English-derived activation steering transfers across English, Italian,
+            Chinese, Korean and Kazakh, and whether representational alignment predicts behavioural change.
+          </p>
+          <p class="execution-note">
+            Experiments run on HPC across three model families, with bootstrap confidence intervals and permutation baselines for behavioural comparisons.
+          </p>
+          <div class="chips">
+            <span>Activation Steering</span><span>Sycophancy</span><span>TruthfulQA</span>
+            <span>Qwen</span><span>Gemma</span><span>OLMo</span>
+          </div>
+          <div class="finding">
+            <span>KEY FINDING</span>
+            <strong>Representation similarity ≠ behavioural reliability.</strong>
+            <p>Cross-lingual steering-vector cosine similarity remained high (0.918–0.990), while behavioural effects varied substantially across languages and model families.</p>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <span class="tag">Collaborative Research · Ongoing</span>
+          <h3>Cross-Lingual &amp; Cross-Task Generalisation of Alignment Interventions</h3>
+          <p>
+            Building on my dissertation findings with Dr Cass Zhao and collaborators, this project asks whether
+            the representation–behaviour gap persists across tasks as well as languages, using broader transfer
+            experiments and mechanistic diagnostics.
+          </p>
+          <div class="status-note">
+            <span>WHAT THIS ADDS</span>
+            <strong>Moves from documenting uneven transfer to testing why it happens, with cross-task transfer experiments and planned probing / causal-localisation analyses.</strong>
+          </div>
+<div class="chips">
+            <span>Cross-lingual transfer</span><span>Cross-task transfer</span>
+            <span>Vector geometry</span><span>Behavioural reliability</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <span class="tag">Research Project · Ongoing</span>
+          <h3>Multilingual Safety Across OLMo 3 Alignment Stages</h3>
+          <p>
+            Testing whether post-training alignment gains generalise consistently across languages,
+            rather than appearing reliable only in English. This extends my broader question from
+            inference-time steering to the alignment pipeline itself.
+          </p>
+          <div class="status-note">
+            <span>CURRENT FOCUS</span>
+            <strong>English–Korean safety consistency across SFT, DPO and RLVR</strong>
+          </div>
+          <div class="chips">
+            <span>OLMo 3</span><span>SFT</span><span>DPO</span><span>RLVR</span><span>Multilingual Safety</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="journey" class="section">
+      <p class="section-no">02 / HOW I GOT HERE</p>
+      <div class="section-heading">
+        <h2>A non-linear path that converged on multilingual AI.</h2>
+        <p>Four stages, each adding a different way of seeing the same problem.</p>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <span class="year">01</span>
+          <div class="timeline-meta">Undergraduate · Double Major</div>
+          <div>
+            <h3>Central Asian Studies + Industrial Management Engineering</h3>
+            <p class="timeline-place">Hankuk University of Foreign Studies</p>
+            <p>I studied language, culture and regional inequality alongside quantitative modelling,
+            optimisation and systems thinking. My undergraduate thesis examined the organisational adaptation
+            of Uzbekistani migrant workers in Korea, an early example of turning a complex human problem into
+            a structured research question.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <span class="year">02</span>
+          <div class="timeline-meta">Industry · Data &amp; Sustainability</div>
+          <div>
+            <h3>Operations Analytics &amp; Sustainability Consulting</h3>
+            <p class="timeline-place">Payhere · EON Group</p>
+            <p>I learned to structure real-world ambiguity: operational data, reporting frameworks and
+            decisions that have to survive contact with practice.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <span class="year">03</span>
+          <div class="timeline-meta">MSc · Speech &amp; NLP</div>
+          <div>
+            <h3>Speech and Natural Language Processing</h3>
+            <p class="timeline-place">University of Sheffield</p>
+            <p>I moved from analysing systems to studying language models directly, building a technical
+            toolkit for large-scale NLP experimentation.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <span class="year">04</span>
+          <div class="timeline-meta">Research · Current</div>
+          <div>
+            <h3>Multilingual LLM Alignment &amp; Reliability</h3>
+            <p class="timeline-place">Activation steering · interpretability · behavioural transfer</p>
+            <p>I now study when interventions transfer across languages and tasks, and why internally
+            similar models can still behave differently.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="toolkit-strip">
+      <span class="toolkit-label">EXPERIMENTAL TOOLKIT</span>
+      <span>Open-weight LLMs on HPC</span>
+      <span>Activation interventions</span>
+      <span>Multilingual evaluation</span>
+      <span>Bootstrap &amp; representation analysis</span>
+    </section>
+<section id="work" class="section">
+      <p class="section-no">03 / SELECTED WORK</p>
+      <div class="section-heading">
+        <h2>Earlier research &amp; applied systems.</h2>
+        <p>Work that shows how I turn research questions into usable systems and reproducible analyses.</p>
+      </div>
+
+      <div class="work-grid">
+        <article class="work-card">
+          <span class="tag">Applied AI Project · 2026</span>
+          <h3>Sustainability Report Compliance Checker</h3>
+          <ul class="evidence-list">
+            <li>Built an end-to-end RAG pipeline over 11 company reports and 7,700+ document chunks.</li>
+            <li>Combined retrieval and reranking, reaching Hit@5 0.963 and MRR 0.819.</li>
+            <li>Packaged the workflow with FastAPI, Streamlit and Docker for reproducible use.</li>
+          </ul>
+          <div class="chips">
+            <span>RAG</span><span>Retrieval</span><span>LLM Verification</span><span>FastAPI</span><span>Docker</span>
+          </div>
+        </article>
+
+        <article class="work-card">
+          <span class="tag">First-Author Research · 2023</span>
+          <h3>LSTM Freight Prediction</h3>
+          <ul class="evidence-list">
+            <li>Led a first-author research project on freight-demand forecasting with LSTM models.</li>
+            <li>Built the modelling and evaluation pipeline in Python from data preparation through analysis.</li>
+            <li>Turned an operational forecasting problem into a reproducible quantitative research task.</li>
+          </ul>
+          <div class="chips">
+            <span>LSTM</span><span>Forecasting</span><span>Python</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="writing" class="section">
+      <p class="section-no">04 / WRITING</p>
+      <div class="section-heading">
+        <h2>Research notes from questions I want to understand better.</h2>
+        <p>Short essays on multilingual alignment, intervention reliability and interpretability.</p>
+      </div>
+      <article class="writing-card">
+        <div>
+          <span class="tag">Research Note · Sep 2026</span>
+          <h3>When Similar Representations Don't Lead to Similar Behaviour</h3>
+          <p>A cross-lingual steering puzzle: why high representational similarity can coexist with uneven behavioural transfer.</p>
+        </div>
+        <a class="text-link" href="writing/cross-lingual-steering-puzzle.html">Read the post ↗</a>
+      </article>
+    </section>
+
+<section class="section think-section">
+      <p class="section-no">05 / HOW I THINK</p>
+      <div class="two-col">
+        <h2>I like turning ambiguous problems into structures we can test.</h2>
+        <div>
+          <p>
+            That pattern goes back to my undergraduate thesis, where I structured the question of
+            organisational adaptation among Uzbekistani migrant workers in Korea into dimensions that
+            could be analysed systematically. It continued through industrial engineering, data operations,
+            sustainability consulting and now NLP research: I tend to break ambiguity into measurable
+            components, test the assumptions behind them, and turn them into something we can reason about
+            or act on.
+          </p>
+          <p>
+            In collaboration, I try to make uncertainty visible early: I write down assumptions, flag
+            unresolved questions, and explain technical decisions clearly enough that others can challenge
+            or build on them.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section personal-section">
+      <p class="section-no">06 / A LITTLE MORE ABOUT ME</p>
+      <div class="personal-copy solo">
+        <h2>Curious about languages, people and the places in between.</h2>
+        <p>
+          I also go by <strong>Ayana</strong>. Outside research, I enjoy languages, hiking and long walks,
+          discovering new places, tutoring from time to time, and unhurried conversations with people I am close to.
+        </p>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <p class="section-no">07 / CONTACT</p>
+      <p class="research-position">
+        My current work starts from a concrete empirical result: alignment can look internally consistent while behaving inconsistently across languages. I want to turn that gap into a broader research programme on reliable alignment under distribution shift.
+      </p>
+      <h2>Research idea, PhD opportunity, or collaboration?</h2>
+      <div class="contact-links">
+        <a href="mailto:misunkim2732@gmail.com">Email ↗</a>
+        <a href="https://github.com/Ayana32" target="_blank" rel="noopener">GitHub ↗</a>
+        <a href="https://www.linkedin.com/in/misun-kim-nlp/" target="_blank" rel="noopener">LinkedIn ↗</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>© 2026 Misun Kim</span>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+
+  <div id="placeholder-toast" class="toast" aria-live="polite">Replace this placeholder link before publishing.</div>
+  <script src="script.js"></script>
+</body>
+</html>
