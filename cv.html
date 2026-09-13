@@ -1,1 +1,71 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>CV — Misun Kim</title><link rel="stylesheet" href="style.css"></head><body><header class="site-header"><a class="brand" href="index.html">MK.</a><nav><a href="index.html#research">Research</a><a href="index.html#writing">Writing</a><a href="index.html#contact">Contact</a></nav></header><main class="cv-page"><a class="back-link" href="index.html">← Back to homepage</a><h1>Misun Kim</h1><p class="meta">Sheffield, UK · <a href="mailto:misunkim2732@gmail.com">misunkim2732@gmail.com</a> · <a href="https://github.com/Ayana32" target="_blank" rel="noopener">GitHub</a> · <a href="https://www.linkedin.com/in/misun-kim-nlp/" target="_blank" rel="noopener">LinkedIn</a></p><h2>Research interests</h2><p>I study the reliability and safety of interventions in foundation models, focusing on when similar internal representations in multilingual LLMs lead to different behavioural responses to the same intervention.</p><h2>Education</h2><div class="entry"><strong>MSc Speech and Natural Language Processing — University of Sheffield</strong><span>Sheffield, UK · Sep 2025 – Sep 2026 · Predicted: Distinction</span><p>Dissertation: Cross-lingual generalisation of representation-level interventions in multilingual LLMs.</p></div><div class="entry"><strong>BE in Industrial Management Engineering — Hankuk University of Foreign Studies</strong><span>South Korea · Mar 2019 – Feb 2024</span><p>Double Major: Central Asian Studies (Kazakh language and regional studies) · GPA 3.94/4.5 · First Distinction Scholarship (2023).</p></div><h2>Research experience</h2><div class="entry"><strong>MSc Dissertation Research — Multilingual LLMs</strong><span>University of Sheffield · Supervisor: Dr Cass Zhao · Feb 2026 – Present</span><ul><li>Investigated the reliability of representation-level interventions in multilingual LLMs, using Contrastive Activation Addition (CAA) to test whether English-derived steering vectors transfer consistently across models and languages.</li><li>Quantified cross-lingual representational similarity between steering vectors (cosine) and found that high geometric similarity did not guarantee equivalent behavioural effects, showing that representational similarity does not by itself establish behavioural equivalence.</li><li>Designed evaluations to characterise when and where generalisation breaks down, using bootstrap confidence intervals, held-out sets, and Gaussian and permutation baselines to distinguish systematic effects from noise.</li><li>Extended the analysis to TruthfulQA and cross-task settings to test whether observed effects generalise beyond a single behaviour or benchmark.</li></ul></div><div class="entry"><strong>Undergraduate Researcher — ICT Mentoring Project, Ministry of Oceans and Fisheries</strong><span>Supervisor: Gyu-Young Lee (KAIST) · Mar 2023 – Nov 2023</span><ul><li>First-authored LSTM study on container freight forecasting across five universities, reducing RMSE by 71% over the baseline (published ACK 2023).</li></ul></div><h2>Key projects</h2><div class="entry"><strong>Multilingual Post-Training Safety Evaluation Framework</strong><span>Aug 2026 – Present</span><ul><li>Built a reproducible multilingual LLM safety-evaluation pipeline for SFT, DPO, and RLVR checkpoints, combining typed experiment/result schemas, benchmark-native scoring, deterministic parallel-sample validation, and automated GitHub Actions CI.</li><li>Ran a 50-item parallel EN/KO pilot on OLMo 3 7B using A40 GPUs, finding a consistent harmful-request refusal gap between Korean and English across all three post-training stages, motivating larger-scale evaluation of cross-lingual safety consistency.</li></ul></div><div class="entry"><strong>ESG Compliance Checker</strong><span>Mar 2026 – Present</span><ul><li>Built an end-to-end compliance verification system over 11 corporate ESG reports, mapping regulatory criteria to retrieved evidence and producing traceable covered/partial/missing judgements using hybrid retrieval and LLM-assisted verification.</li><li>Developed and audited a manually annotated retrieval gold set; hybrid retrieval with reranking improved Hit@5 from 83.3% to 100% and MRR from 0.628 to 0.819 over BM25-only retrieval.</li><li>Used retrieval and verifier error analysis to identify annotation gaps and evidence-selection failures, then modularised the system with FastAPI, automated testing, Docker, and a separate Streamlit interface.</li></ul></div><h2>Work experience</h2><div class="entry"><strong>Sustainability Research Analyst — Eon Consulting Group</strong><span>South Korea · Mar 2025 – May 2025</span><ul><li>Contributed to 170+ page sustainability reports for major public and financial organisations, conducting TNFD climate scenario analysis and developing a CSDDD-aligned supply-chain risk assessment framework.</li></ul></div><div class="entry"><strong>Field Service Manager (Data &amp; Operations) — Payhere</strong><span>South Korea · Mar 2024 – Aug 2024</span><ul><li>Built workflow automation using the Slack API, Google Sheets, and Looker Studio to analyse 10,000+ service records, reducing unnecessary field visits by 17%.</li></ul></div><h2>Teaching experience</h2><div class="entry"><strong>Language Tutor (Private)</strong><span>Mar 2021 – Nov 2025</span><ul><li>Provided individualized Korean/English instruction to 5+ learners aged 6–18, from early literacy to CSAT-level advanced reading.</li></ul></div><h2>Skills</h2><p><strong>Programming:</strong> Python, SQL</p><p><strong>ML &amp; NLP:</strong> PyTorch, Hugging Face Transformers, scikit-learn, clustering (k-means, hierarchical)</p><p><strong>LLM Safety &amp; Evaluation:</strong> activation steering (CAA), post-training safety evaluation, refusal analysis, behavioural evaluation, cross-lingual safety evaluation, representation analysis, layer-wise interventions, experimental controls, LLM-as-judge</p><p><strong>Research Infrastructure:</strong> HPC/SLURM, Weights &amp; Biases, Git, Docker, FastAPI, Flask, ChromaDB</p><h2>Languages</h2><p>Korean (Native), English (Fluent), Spanish (Intermediate), Kazakh (Intermediate)</p><h2>Publications &amp; manuscripts</h2><p>Kim, M., Kim, Y., Kim, E., Lee, B., Han, Y., &amp; Lee, G. (2023). <em>Implementation of Container Volume Prediction Technology using Deep Learning.</em> ACK Conference Proceedings, 30(2).</p><p>Manuscript in preparation for short paper submission (2026). <em>Cross-lingual and cross-task generalisation of representation-level interventions in multilingual LLMs.</em></p></main><footer><span>© 2026 Misun Kim</span><a href="index.html">Home ↑</a></footer></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>CV — Misun Kim</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="index.html">MK.</a>
+  <nav><a href="index.html#research">Research</a><a href="index.html#writing">Writing</a><a href="index.html#contact">Contact</a></nav>
+</header>
+<main class="cv-page">
+  <div class="cv-top-actions">
+    <a class="back-link" href="index.html">← Back to homepage</a>
+    <a class="btn secondary cv-download" href="Misun_Kim_CV.pdf" download>Download PDF ↘</a>
+  </div>
+  <h1>Misun Kim</h1>
+  <p class="meta">Sheffield, UK · <a href="mailto:misunkim2732@gmail.com">misunkim2732@gmail.com</a> · <a href="https://github.com/Ayana32" target="_blank" rel="noopener">GitHub</a> · <a href="https://www.linkedin.com/in/misun-kim-nlp/" target="_blank" rel="noopener">LinkedIn</a></p>
+
+  <h2>Research interests</h2>
+  <p>I study the reliability, safety, and controllability of interventions in foundation models, focusing on when similar internal representations in multilingual LLMs lead to different behavioural responses under cross-lingual and cross-task transfer.</p>
+
+  <h2>Education</h2>
+  <div class="entry"><strong>MSc Speech and Natural Language Processing — University of Sheffield</strong><span>Sheffield, UK · Sep 2025 – Sep 2026 · Predicted: Distinction</span><p>Dissertation: Cross-lingual generalisation of representation-level interventions in multilingual LLMs.</p></div>
+  <div class="entry"><strong>BE in Industrial Management Engineering — Hankuk University of Foreign Studies</strong><span>South Korea · Mar 2019 – Feb 2024</span><p>Double Major: Central Asian Studies (Kazakh language and regional studies) · GPA 3.94/4.5 · First Distinction Scholarship (2023).</p></div>
+
+  <h2>Research experience</h2>
+  <div class="entry"><strong>MSc Dissertation Research — Multilingual LLMs</strong><span>University of Sheffield · Supervisor: Dr Cass Zhao · Feb 2026 – Present</span><ul>
+    <li>Investigated the robustness of activation-level interventions in multilingual LLMs using Contrastive Activation Addition (CAA), testing whether English-derived steering vectors transfer consistently across three model families and five languages.</li>
+    <li>Found that high cross-lingual representational similarity did not reliably predict behavioural transfer, revealing a gap between geometric alignment and intervention robustness.</li>
+    <li>Designed layer-wise evaluations with bootstrap confidence intervals, held-out sets, and Gaussian and permutation random-vector baselines to characterise failure modes and distinguish systematic effects from noise.</li>
+    <li>Extended analysis to TruthfulQA and cross-task settings, finding that interventions targeting one behaviour can also shift performance on another task and motivating mechanistic analysis of off-target effects.</li>
+  </ul></div>
+  <div class="entry"><strong>Undergraduate Researcher — ICT Mentoring Project, Ministry of Oceans and Fisheries</strong><span>Supervisor: Gyu-Young Lee (KAIST) · Mar 2023 – Nov 2023</span><ul><li>First-authored LSTM study on container freight forecasting across five universities, reducing RMSE by 71% over the baseline (published ACK 2023).</li></ul></div>
+
+  <h2>Key projects</h2>
+  <div class="entry"><strong>Multilingual Post-Training Safety Evaluation Framework</strong><span>Aug 2026 – Present</span><ul>
+    <li>Built a reproducible multilingual LLM safety-evaluation pipeline for SFT, DPO, and RLVR checkpoints, combining typed experiment/result schemas, benchmark-native scoring, deterministic parallel-sample validation, and automated GitHub Actions CI.</li>
+    <li>Ran a 50-item parallel EN/KO pilot on OLMo 3 7B using A40 GPUs, finding a consistent harmful-request refusal gap between Korean and English across all three post-training stages, motivating larger-scale evaluation of cross-lingual safety consistency.</li>
+  </ul></div>
+  <div class="entry"><strong>ESG Compliance Checker</strong><span>Mar 2026 – Present</span><ul>
+    <li>Built an end-to-end compliance verification system over 11 corporate ESG reports, mapping regulatory criteria to retrieved evidence and producing traceable covered/partial/missing judgements using hybrid retrieval and LLM-assisted verification.</li>
+    <li>Developed and audited a manually annotated retrieval gold set; hybrid retrieval with reranking improved Hit@5 from 83.3% to 100% and MRR from 0.628 to 0.819 over BM25-only retrieval.</li>
+    <li>Used retrieval and verifier error analysis to identify annotation gaps and evidence-selection failures, then modularised the system with FastAPI, automated testing, Docker, and a separate Streamlit interface.</li>
+  </ul></div>
+
+  <h2>Work experience</h2>
+  <div class="entry"><strong>Sustainability Research Analyst — Eon Consulting Group</strong><span>South Korea · Mar 2025 – May 2025</span><ul><li>Contributed to 170+ page sustainability reports for major public and financial organisations, conducting TNFD climate scenario analysis and developing a CSDDD-aligned supply-chain risk assessment framework.</li></ul></div>
+  <div class="entry"><strong>Field Service Manager (Data &amp; Operations) — Payhere</strong><span>South Korea · Mar 2024 – Aug 2024</span><ul><li>Built workflow automation using the Slack API, Google Sheets, and Looker Studio to analyse 10,000+ service records, reducing unnecessary field visits by 17%.</li></ul></div>
+
+  <h2>Teaching experience</h2>
+  <div class="entry"><strong>Language Tutor (Private)</strong><span>Mar 2021 – Nov 2025</span><ul><li>Provided individualized Korean/English instruction to 5+ learners aged 6–18, from early literacy to CSAT-level advanced reading.</li></ul></div>
+
+  <h2>Skills</h2>
+  <p><strong>Programming:</strong> Python, SQL</p>
+  <p><strong>ML &amp; NLP:</strong> PyTorch, Hugging Face Transformers, scikit-learn, clustering (k-means, hierarchical)</p>
+  <p><strong>LLM Interpretability &amp; Safety:</strong> activation steering (CAA), representation analysis, layer-wise interventions, cross-lingual behavioural evaluation, post-training safety evaluation, refusal analysis, experimental controls, LLM-as-judge</p>
+  <p><strong>Research Infrastructure:</strong> HPC/SLURM, Weights &amp; Biases, Git, Docker, FastAPI, Flask, ChromaDB</p>
+
+  <h2>Languages</h2>
+  <p>Korean (Native), English (Fluent), Spanish (Intermediate), Kazakh (Intermediate)</p>
+
+  <h2>Publications &amp; manuscripts</h2>
+  <p>Kim, M., Kim, Y., Kim, E., Lee, B., Han, Y., &amp; Lee, G. (2023). <em>Implementation of Container Volume Prediction Technology using Deep Learning.</em> ACK Conference Proceedings, 30(2).</p>
+  <p>Manuscript in preparation for short paper submission (2026). <em>Cross-lingual and cross-task generalisation of representation-level interventions in multilingual LLMs.</em></p>
+</main>
+<footer><span>© 2026 Misun Kim</span><a href="index.html">Home ↑</a></footer>
+</body>
+</html>
