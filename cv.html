@@ -20,18 +20,18 @@
   <p class="meta">Sheffield, UK · <a href="mailto:misunkim2732@gmail.com">misunkim2732@gmail.com</a> · <a href="https://github.com/Ayana32" target="_blank" rel="noopener">GitHub</a> · <a href="https://www.linkedin.com/in/misun-kim-nlp/" target="_blank" rel="noopener">LinkedIn</a></p>
 
   <h2>Research interests</h2>
-  <p>I study the reliability, safety, and controllability of interventions in foundation models, focusing on when similar internal representations in multilingual LLMs lead to different behavioural responses under cross-lingual and cross-task transfer.</p>
+  <p>I study when internal representations in multilingual LLMs support robust behavioural control and when they do not. In my dissertation, transfer success reversed across models and behaviours: each model carried one alignment intervention across languages and failed on the other.</p>
 
   <h2>Education</h2>
-  <div class="entry"><strong>MSc Speech and Natural Language Processing — University of Sheffield</strong><span>Sheffield, UK · Sep 2025 – Sep 2026 · Predicted: Distinction</span><p>Dissertation: Cross-lingual generalisation of representation-level interventions in multilingual LLMs.</p></div>
+  <div class="entry"><strong>MSc Speech and Natural Language Processing — University of Sheffield</strong><span>Sheffield, UK · Sep 2025 – Sep 2026 · Predicted: Distinction</span><p>Dissertation: Cross-Lingual Activation Steering in Large Language Models: Representational Alignment and Behavioural Transfer</p></div>
   <div class="entry"><strong>BE in Industrial Management Engineering — Hankuk University of Foreign Studies</strong><span>South Korea · Mar 2019 – Feb 2024</span><p>Double Major: Central Asian Studies (Kazakh language and regional studies) · GPA 3.94/4.5 · First Distinction Scholarship (2023).</p></div>
 
   <h2>Research experience</h2>
-  <div class="entry"><strong>MSc Dissertation Research — Multilingual LLMs</strong><span>University of Sheffield · Supervisor: Dr Cass Zhao · Feb 2026 – Present</span><ul>
+  <div class="entry"><strong>MSc Dissertation Research — Reliability of LLM Alignment Interventions</strong><span>University of Sheffield · Supervisors: Dr Cass Zhao, Dr Marco Valentino · Feb 2026 – Sep 2026</span><ul>
     <li>Investigated the robustness of activation-level interventions in multilingual LLMs using Contrastive Activation Addition (CAA), testing whether English-derived steering vectors transfer consistently across three model families and five languages.</li>
-    <li>Found that high cross-lingual representational similarity did not reliably predict behavioural transfer, revealing a gap between geometric alignment and intervention robustness.</li>
+    <li>Identified a representation–behaviour gap: high steering-vector similarity did not reliably predict the magnitude or direction of behavioural transfer across models and tasks, concluding that high representational similarity is not sufficient to guarantee comparable behavioural effects, and leaving the question of necessity unresolved.</li>
     <li>Designed layer-wise evaluations with bootstrap confidence intervals, held-out sets, and Gaussian and permutation random-vector baselines to characterise failure modes and distinguish systematic effects from noise.</li>
-    <li>Extended analysis to TruthfulQA and cross-task settings, finding that interventions targeting one behaviour can also shift performance on another task and motivating mechanistic analysis of off-target effects.</li>
+    <li>Conducted a separate cross-task evaluation using English-derived truthfulness vectors on TruthfulQA, finding that transfer success reversed across models and behaviours: Qwen3.5-9B transferred sycophancy but not truthfulness, OLMo3-7B-Instruct the reverse.</li>
   </ul></div>
   <div class="entry"><strong>Undergraduate Researcher — ICT Mentoring Project, Ministry of Oceans and Fisheries</strong><span>Supervisor: Gyu-Young Lee (KAIST) · Mar 2023 – Nov 2023</span><ul><li>First-authored LSTM study on container freight forecasting across five universities, reducing RMSE by 71% over the baseline (published ACK 2023).</li></ul></div>
 
@@ -56,7 +56,7 @@
   <h2>Skills</h2>
   <p><strong>Programming:</strong> Python, SQL</p>
   <p><strong>ML &amp; NLP:</strong> PyTorch, Hugging Face Transformers, scikit-learn, clustering (k-means, hierarchical)</p>
-  <p><strong>LLM Interpretability &amp; Safety:</strong> activation steering (CAA), representation analysis, layer-wise interventions, cross-lingual behavioural evaluation, post-training safety evaluation, refusal analysis, experimental controls, LLM-as-judge</p>
+  <p><strong>LLM Alignment &amp; Interpretability:</strong> activation steering (CAA), representation analysis, layer-wise interventions, cross-lingual behavioural evaluation, post-training safety evaluation, refusal analysis, experimental controls, LLM-as-judge</p>
   <p><strong>Research Infrastructure:</strong> HPC/SLURM, Weights &amp; Biases, Git, Docker, FastAPI, Flask, ChromaDB</p>
 
   <h2>Languages</h2>
