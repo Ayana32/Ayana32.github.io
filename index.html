@@ -24,10 +24,10 @@
     <div class="hero-copy">
       <p class="eyebrow">MULTILINGUAL NLP · LLM ALIGNMENT · INTERPRETABILITY</p>
       <h1>Making language-model behaviour more reliable across languages.</h1>
-      <p class="hero-lede">I’m <strong>Misun Kim</strong> — I also go by <strong>Ayana</strong> — an MSc researcher in Speech &amp; Natural Language Processing at the University of Sheffield. I study when alignment interventions transfer across languages and tasks, and why similar internal representations can still lead to different behavioural effects.</p>
+      <p class="hero-lede">I’m <strong>Misun Kim</strong> — I also go by <strong>Ayana</strong> — and I recently completed the MSc programme in Speech &amp; Natural Language Processing at the University of Sheffield (final award pending). My research investigates when LLM alignment interventions generalise across languages and tasks, and when they fail. I combine representation analysis, controlled experiments, and multilingual behavioural evaluation to understand the gap between apparent alignment and reliable model behaviour.</p>
       <div class="language-context">
         <span class="language-label">MULTILINGUAL BACKGROUND</span>
-        <p>Korean, English, Spanish, Kazakh and Japanese</p>
+        <p>Korean, English, Spanish and Kazakh</p>
       </div>
       <div class="hero-actions">
         <a class="btn primary" href="#research">Explore my research ↘</a>
@@ -42,12 +42,12 @@
 
     <aside class="hero-focus" aria-label="Current research focus">
       <span class="language-label">CURRENT RESEARCH FOCUS</span>
-      <h2>From transfer failures to causal explanation.</h2>
+      <h2>Reliable alignment and evaluation beyond English.</h2>
       <ul>
-        <li>Cross-lingual activation steering</li>
-        <li>Cross-task intervention reliability</li>
-        <li>Mechanistic explanations of uneven transfer</li>
-        <li>Multilingual post-training safety</li>
+        <li>Multilingual LLM safety and evaluation</li>
+        <li>Activation steering and representation engineering</li>
+        <li>Cross-lingual and cross-task generalisation</li>
+        <li>Reliability of automated LLM evaluation</li>
       </ul>
     </aside>
   </section>
@@ -61,10 +61,10 @@
   <section id="research" class="section">
     <p class="section-no">01 / FEATURED RESEARCH</p>
     <div class="section-heading">
-      <h2>One research question, tested from three angles.</h2>
+      <h2>When can we trust LLM alignment to generalise beyond English?</h2>
       <div>
-        <p>When an alignment intervention looks coherent internally, when can we trust it to behave consistently across languages and tasks?</p>
-        <p class="research-roadmap">Characterise the failure → explain where it comes from → test whether alignment remains reliable beyond English.</p>
+        <p>From internal interventions to observed safety behaviour: how can we tell when alignment is genuinely reliable across languages and tasks?</p>
+        <p class="research-roadmap">Characterise transfer failures → validate the behaviour and its measurement → investigate what explains the gap.</p>
       </div>
     </div>
 
@@ -73,12 +73,12 @@
         <span class="tag">MSc Dissertation · 2026</span>
         <h3>Cross-Lingual Activation Steering in LLMs</h3>
         <p class="project-meta-line"><strong>Evaluation languages:</strong> English, Italian, Chinese, Korean and Kazakh</p>
-        <p>Tested whether English-derived Contrastive Activation Addition (CAA) steering transfers across three model families, and whether cross-lingual representation geometry predicts behavioural change.</p>
-        <p class="execution-note">I ran the experiments on HPC, designed layer-wise evaluations, and used bootstrap confidence intervals plus Gaussian and permutation random-vector baselines to separate systematic effects from noise.</p>
+        <p><strong>Why:</strong> Activation steering can modify LLM behaviour without retraining, but it is unclear whether English-derived interventions generalise reliably across languages and tasks.</p>
+        <p class="execution-note"><strong>How:</strong> Evaluated Contrastive Activation Addition (CAA) across three model families and five languages on HPC, using layer-wise interventions, held-out evaluations, bootstrap confidence intervals, and Gaussian and permutation random-vector baselines.</p>
         <div class="finding">
           <span>KEY FINDING</span>
           <strong>Representation similarity ≠ behavioural reliability.</strong>
-          <p>Qwen and Gemma showed robust cross-lingual sycophancy transfer, while OLMo3 transferred sycophancy only within English yet improved truthfulness in three of four target languages. High representational similarity was not sufficient for comparable behavioural transfer.</p>
+          <p>High representational similarity did not guarantee comparable behavioural effects. Qwen transferred sycophancy but not truthfulness, while OLMo showed the opposite pattern. This establishes that representational similarity alone is not sufficient; whether it is necessary remains unresolved.</p>
         </div>
         <div class="chips"><span>Activation Steering</span><span>Sycophancy</span><span>TruthfulQA</span><span>Qwen</span><span>Gemma</span><span>OLMo</span></div>
         <div class="project-links">
@@ -90,13 +90,13 @@
       <article class="project-card">
         <span class="tag">Collaborative Research · Ongoing</span>
         <h3>Cross-Lingual &amp; Cross-Task Generalisation of Alignment Interventions</h3>
-        <p>This follow-up grows directly from the failure modes I identified in my dissertation. I am extending the question from cross-lingual transfer to cross-task generalisation and using those failures to define the next mechanistic tests.</p>
+        <p><strong>Why:</strong> Similar steering representations do not consistently predict behavioural transfer, leaving open whether differences arise from steering-vector strength, direction, evaluation metrics, or target-language behaviour.</p>
         <div class="status-note">
           <span>CURRENT WORK</span>
-          <strong>Cross-task transfer experiments are underway; probing, subspace analysis and causal localisation are planned to distinguish metric limitation, subspace mismatch and downstream divergence.</strong>
+          <strong>Follow-up analyses have examined norm matching, directional coherence, and alternative transfer metrics. The joint manuscript is in preparation (2027); further mechanistic explanations remain open research questions.</strong>
         </div>
-        <p class="ownership-note"><strong>My role:</strong> carrying the dissertation’s representation–behaviour gap into the next experimental questions and testing which explanation survives broader transfer settings.</p>
-        <div class="chips"><span>Cross-task transfer</span><span>Subspace analysis</span><span>Probing</span><span>Causal localisation</span></div>
+        <p class="ownership-note"><strong>How / my role:</strong> Extended transfer evaluations and compared source-vector norms, directional coherence, and behavioural metrics to investigate possible explanations for uneven transfer.</p>
+        <div class="chips"><span>Cross-lingual transfer</span><span>Cross-task evaluation</span><span>Norm matching</span><span>Directional coherence</span></div>
         <div class="project-links">
           <a href="https://github.com/Ayana32/cross-lingual-caa" target="_blank" rel="noopener">Research repo ↗</a>
         </div>
@@ -105,12 +105,12 @@
       <article class="project-card">
         <span class="tag">Research Project · Ongoing</span>
         <h3>Multilingual Safety Across OLMo 3 Alignment Stages</h3>
-        <p>I built a reproducible evaluation pipeline for SFT, DPO and RLVR checkpoints to test whether post-training safety gains remain consistent across languages rather than looking reliable only in English.</p>
+        <p><strong>Why:</strong> Safety improvements measured in English may not generalise to other languages, and automated safety judges can introduce language-dependent measurement errors.</p>
         <div class="status-note">
-          <span>PILOT RESULT</span>
-          <strong>A 50-item parallel English–Korean pilot found a consistent harmful-request refusal gap between the two languages across all three post-training stages; larger-scale evaluation is ongoing.</strong>
+          <span>KEY FINDINGS</span>
+          <strong>For matched English and Korean harmful requests, scorer-measured refusal rates were approximately 80% versus 10%, with a large gap persisting under human validation. Human annotation also revealed safety-judge errors in opposite directions across the two languages.</strong>
         </div>
-        <p class="ownership-note"><strong>What I built:</strong> typed experiment/result schemas, benchmark-native scoring, deterministic parallel-sample validation, GitHub Actions CI, and A40 evaluation runs.</p>
+        <p class="ownership-note"><strong>How:</strong> Built a reproducible framework covering OLMo 3 post-training checkpoints (SFT, DPO and RLVR), evaluated 200 matched prompts per language, and performed stratified human validation of 70 responses with bootstrap and Bayesian uncertainty analysis.</p>
         <div class="chips"><span>OLMo 3</span><span>SFT</span><span>DPO</span><span>RLVR</span><span>Multilingual Safety</span></div>
         <div class="project-links">
           <a href="https://github.com/Ayana32/multilingual-posttraining-eval" target="_blank" rel="noopener">GitHub ↗</a>
@@ -159,7 +159,7 @@
         <div>
           <h3>Multilingual LLM Alignment &amp; Reliability</h3>
           <p class="timeline-place">Activation steering · interpretability · behavioural transfer</p>
-          <p>I now study where intervention reliability breaks under cross-lingual and cross-task transfer, and what mechanisms explain that divergence.</p>
+          <p>I now study where alignment reliability breaks across languages and tasks, including how automated evaluations can conceal or distort behavioural differences.</p>
         </div>
       </div>
     </div>
@@ -184,9 +184,9 @@
         <span class="tag">Applied AI Project · 2026</span>
         <h3>Sustainability Report Compliance Checker</h3>
         <ul class="evidence-list">
-          <li>Built an end-to-end RAG pipeline over 11 company reports and 7,700+ document chunks.</li>
-          <li>Hybrid retrieval with reranking improved MRR from 0.628 to 0.819 on a manually annotated retrieval gold set.</li>
-          <li>Packaged the workflow with FastAPI, Streamlit and Docker.</li>
+          <li><strong>Why:</strong> ESG compliance verification needs traceable evidence, but retrieval failures can undermine automated judgements.</li>
+          <li><strong>Finding:</strong> Hybrid retrieval with reranking improved Hit@5 from 83.3% to 100% and MRR from 0.628 to 0.819 over BM25-only retrieval.</li>
+          <li><strong>How:</strong> Built and audited a retrieval and verification pipeline over 11 ESG reports, using a manually annotated gold set and retrieval-error analysis; deployed with FastAPI, Streamlit and Docker.</li>
         </ul>
         <div class="project-links">
           <a href="https://github.com/Ayana32/esg-report-compliance-checker" target="_blank" rel="noopener">GitHub ↗</a>
@@ -196,9 +196,9 @@
         <span class="tag">First-Author Research · 2023</span>
         <h3>LSTM Freight Prediction</h3>
         <ul class="evidence-list">
-          <li>Led a first-author freight-demand forecasting research project.</li>
-          <li>Built the modelling and evaluation pipeline in Python.</li>
-          <li>Published in ACK 2023.</li>
+          <li><strong>Why:</strong> Accurate container-freight forecasts can support logistics planning and resource allocation.</li>
+          <li><strong>Finding:</strong> Reduced forecasting RMSE by 71% relative to the baseline.</li>
+          <li><strong>How:</strong> Led a first-author LSTM forecasting study and its Python evaluation pipeline; published in ACK 2023.</li>
         </ul>
         <div class="project-links">
           <a href="https://www.manuscriptlink.com/society/kips/conference/ack2023/file/downloadSoConfManuscript/abs/KIPS_C2023B0092" target="_blank" rel="noopener">Paper ↗</a>
@@ -221,7 +221,7 @@
 
   <section id="contact" class="section contact">
     <p class="section-no">04 / CONTACT</p>
-    <p class="research-position">My current work starts from a concrete empirical result: alignment can look internally consistent while behaving inconsistently across languages. I want to turn that gap into a broader research programme on reliable alignment under distribution shift.</p>
+    <p class="research-position">My research starts from a recurring finding: apparent alignment can diverge from observed behaviour across languages, and even the tools used to measure safety can introduce systematic errors. I aim to study reliable alignment and evaluation under distribution shift.</p>
     <h2>Research idea, PhD opportunity, or collaboration?</h2>
     <div class="contact-links">
       <a href="mailto:misunkim2732@gmail.com">Email ↗</a>
