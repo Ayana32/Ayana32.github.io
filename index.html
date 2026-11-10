@@ -24,7 +24,7 @@
     <div class="hero-copy">
       <p class="eyebrow">MULTILINGUAL NLP · LLM ALIGNMENT · INTERPRETABILITY</p>
       <h1>Making language-model behaviour more reliable across languages.</h1>
-      <p class="hero-lede">I’m <strong>Misun Kim</strong> — I also go by <strong>Ayana</strong> — and I recently completed the MSc programme in Speech &amp; Natural Language Processing at the University of Sheffield with Distinction. My research investigates when LLM alignment interventions generalise across languages and tasks, and when they fail. I combine representation analysis, controlled experiments, and multilingual behavioural evaluation to understand the gap between apparent alignment and reliable model behaviour.</p>
+      <p class="hero-lede">I’m <strong>Misun Kim</strong> — I also go by <strong>Ayana</strong> — and I recently completed the MSc in Computer Science with Speech and Natural Language Processing at the University of Sheffield with Distinction. My research investigates when LLM alignment interventions generalise across languages and tasks, and when they fail. I combine representation analysis, controlled experiments, and multilingual behavioural evaluation to understand the gap between apparent alignment and reliable model behaviour.</p>
       <div class="language-context">
         <span class="language-label">MULTILINGUAL BACKGROUND</span>
         <p>Korean, English, Spanish and Kazakh</p>
@@ -46,7 +46,7 @@
       <ul>
         <li>Multilingual LLM safety and evaluation</li>
         <li>Activation steering and representation engineering</li>
-        <li>Cross-lingual and cross-task generalisation</li>
+        <li>Multimodal agent safety and prompt injection</li>
         <li>Reliability of automated LLM evaluation</li>
       </ul>
     </aside>
@@ -104,16 +104,32 @@
 
       <article class="project-card">
         <span class="tag">Research Project · Ongoing</span>
-        <h3>Multilingual Safety Across OLMo 3 Alignment Stages</h3>
+        <h3>English–Korean LLM Safety and Judge Validation</h3>
         <p><strong>Why:</strong> Safety improvements measured in English may not generalise to other languages, and automated safety judges can introduce language-dependent measurement errors.</p>
         <div class="status-note">
           <span>KEY FINDINGS</span>
-          <strong>For matched English and Korean harmful requests, scorer-measured refusal rates were approximately 80% versus 10%, with a large gap persisting under human validation. Human annotation also revealed safety-judge errors in opposite directions across the two languages.</strong>
+          <strong>Human-validated estimates put harmful-request refusal 68–76 percentage points higher in English than in Korean across the methods and refusal definitions tested. The automated judge missed some English redirect refusals and counted some Korean disclaimer-then-comply responses as refusals.</strong>
         </div>
-        <p class="ownership-note"><strong>How:</strong> Built a reproducible framework covering OLMo 3 post-training checkpoints (SFT, DPO and RLVR), evaluated 200 matched prompts per language, and performed stratified human validation of 70 responses with bootstrap and Bayesian uncertainty analysis.</p>
-        <div class="chips"><span>OLMo 3</span><span>SFT</span><span>DPO</span><span>RLVR</span><span>Multilingual Safety</span></div>
+        <p class="ownership-note"><strong>How:</strong> Built a reproducible Python evaluation pipeline and compared OLMo 3 7B DPO and RLVR checkpoints on 200 matched English–Korean prompts, including 93 harmful items. Labelled a stratified sample of 70 responses without seeing the automated verdicts.</p>
+        <div class="chips"><span>OLMo 3</span><span>DPO</span><span>RLVR</span><span>Judge validation</span></div>
         <div class="project-links">
           <a href="https://github.com/Ayana32/multilingual-posttraining-eval" target="_blank" rel="noopener">GitHub ↗</a>
+          <a href="https://github.com/Ayana32/multilingual-posttraining-eval/blob/main/docs/phase2b-results.md" target="_blank" rel="noopener">Phase 2B results ↗</a>
+        </div>
+      </article>
+
+      <article class="project-card" id="agent-safety">
+        <span class="tag">Research Project · Phase 3</span>
+        <h3>Multimodal Agent Safety Under Prompt Injection</h3>
+        <p><strong>Why:</strong> An agent can complete its assigned task while also following an instruction hidden in an input document.</p>
+        <div class="status-note">
+          <span>KEY FINDING</span>
+          <strong>The receipt-processing agent issued an unauthorised mock email call in 80 of 80 attack runs and zero of 120 control runs. It still recorded the expense correctly in every attack run.</strong>
+        </div>
+        <p class="ownership-note"><strong>How:</strong> Preregistered a 200-run Qwen3-VL-8B experiment with English and Korean inputs delivered as images or text. Scored tool calls, email contents and expense recording separately using execution logs.</p>
+        <div class="chips"><span>Prompt injection</span><span>Multimodal agents</span><span>Tool-call evaluation</span></div>
+        <div class="project-links">
+          <a href="https://github.com/Ayana32/multilingual-posttraining-eval/blob/main/docs/phase3-results.md" target="_blank" rel="noopener">Phase 3 results ↗</a>
         </div>
       </article>
     </div>
@@ -185,7 +201,7 @@
         <h3>Sustainability Report Compliance Checker</h3>
         <ul class="evidence-list">
           <li><strong>Why:</strong> ESG compliance verification needs traceable evidence, but retrieval failures can undermine automated judgements.</li>
-          <li><strong>Finding:</strong> Hybrid retrieval with reranking improved Hit@5 from 83.3% to 100% and MRR from 0.628 to 0.819 over BM25-only retrieval.</li>
+          <li><strong>Finding:</strong> Hybrid retrieval with reranking retrieved relevant evidence in the top five for 26 of 27 queries (96.3% Hit@5). With fixed evidence, the verifier matched human labels in 33 of 39 cases (84.6%).</li>
           <li><strong>How:</strong> Built and audited a retrieval and verification pipeline over 11 ESG reports, using a manually annotated gold set and retrieval-error analysis; deployed with FastAPI, Streamlit and Docker.</li>
         </ul>
         <div class="project-links">
